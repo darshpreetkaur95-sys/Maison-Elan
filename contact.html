@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Maison Élan</title>
+<meta name="description" content="Get in touch with Maison Élan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Maison <span>Élan</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Get in touch</h2>
+        <p>We reply within two working days</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3>Studio</h3>
+          <p>12 Rue des Tisserands<br>75003 Paris, France</p>
+
+          <h3>Email</h3>
+          <p>hello@maisonelan.example</p>
+
+          <h3>Hours</h3>
+          <p>Monday–Friday, 10:00–18:00 CET</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Maison Élan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

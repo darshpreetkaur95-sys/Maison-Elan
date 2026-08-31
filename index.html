@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Élan — Considered Clothing</title>
+<meta name="description" content="Maison Élan is a curated wardrobe of considered essentials, crafted with care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Maison <span>Élan</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Considered Clothing</p>
+        <h1>Pieces you'll still reach for in ten years.</h1>
+        <p>We design in small batches, using natural fabrics that age well and cuts that don't chase a season. Every piece is made to be worn often, not just once.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Shop the collection</a>
+          <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Featured wardrobe piece from the current collection"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>New this season</h2>
+        <p><a href="products.html">View all products →</a></p>
+      </div>
+      <div class="product-grid" id="featuredGrid">
+        <!-- Filled by js/products.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="wrap section">
+      <div class="value-item">
+        <h3>Small batches</h3>
+        <p>We produce in limited runs so nothing sits unsold in a warehouse. Once a run is gone, it's gone.</p>
+      </div>
+      <div class="value-item">
+        <h3>Natural fabrics</h3>
+        <p>Linen, wool, and organic cotton — materials that soften and improve with wear, not synthetics that pill.</p>
+      </div>
+      <div class="value-item">
+        <h3>Fair production</h3>
+        <p>Made in workshops we've visited in person, with people who are paid fairly for their craft.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Maison Élan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

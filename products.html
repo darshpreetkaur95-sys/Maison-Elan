@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Maison Élan</title>
+<meta name="description" content="Browse the full Maison Élan collection of considered clothing essentials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Maison <span>Élan</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The collection</h2>
+        <p id="resultCount"></p>
+      </div>
+
+      <div class="filter-bar" id="filterBar" role="group" aria-label="Filter products by category">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="outerwear" aria-pressed="false">Outerwear</button>
+        <button class="filter-btn" data-filter="tops" aria-pressed="false">Tops</button>
+        <button class="filter-btn" data-filter="bottoms" aria-pressed="false">Bottoms</button>
+        <button class="filter-btn" data-filter="accessories" aria-pressed="false">Accessories</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Filled by js/products.js -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Maison Élan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
